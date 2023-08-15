@@ -1,4 +1,4 @@
-package opp;
+package pet;
 
 public class Dono {
 
