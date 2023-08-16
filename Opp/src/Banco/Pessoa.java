@@ -2,19 +2,12 @@ package Banco;
 
 public class Pessoa {
 
-    public Pessoa(String nome, String cpf) {
+    public Pessoa(String nome) {
         this.nome = nome;
-        if(this.validaCPF(cpf)){
-            this.cpf = cpf;
-        }else{
-            this.cpf = "000.000.000-65";
-        }
-        
+         
     }
     
-
-private String nome;
-private String cpf;
+    private String nome;
 
     public String getNome() {
         return nome;
@@ -24,11 +17,7 @@ private String cpf;
         this.nome = nome;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
-
-    private boolean validaCPF(String cpf) {
+    public boolean validaDocumento(String documento) {
         return true;
     }
 
